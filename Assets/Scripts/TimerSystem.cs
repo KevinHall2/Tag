@@ -16,6 +16,8 @@ public class TimerSystem : MonoBehaviour
     private float _timeRemaining;
     private TagSystem _tagSystem;
 
+    public float TimeRemaining { get { return _timeRemaining; } }
+
     private void Start()
     {
         _tagSystem = GetComponent<TagSystem>();
